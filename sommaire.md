@@ -1,8 +1,9 @@
 # Sommaire
 
-[Les listes](http://physiquelycee.fr/ISN/liste.html "Les listes")  
+* [Les listes](http://physiquelycee.fr/ISN/liste.html "Les listes")  
+* [Les fonctions](http://physiquelycee.fr/ISN/fonction.html "les fonctions")
+* [Petits projets](http://physiquelycee.fr/ISN/miniprojets.html "miniprojets")
 
-*	Petits projets (à venir)
 
 [Les fonctions] en construction
 [Les dictionnaires]
