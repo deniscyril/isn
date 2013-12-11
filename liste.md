@@ -67,13 +67,42 @@ On peut ordonner les éléments d'une liste en faisant appel à la méthode *sor
 ~~~
 maliste = [3, 1, 4, 2, 5]
 maliste.sort()
-print li
-~~~~
+print liste
+~~~
+On peut trier du plus grand au plus petit en utilisant l'option reverse=True
+~~~
+maliste = [3, 1, 4, 2, 5]
+maliste.sort(reverse=True)
+print maliste
+~~~
+
+## Les compréhensions de liste
+
+On peut à partir d'une liste générer une autre liste de façon "intelligente" par exemple à partir d'une liste contenant les entiers 0, 1, 2, 3, 4 on va générer les nombres 0, 3, 6, 9, 12. 
+
+~~~
+
+liste_initiale = [0,1,2,3,4]
+liste_triple = [3*nb for nb in liste_intiale]
+print liste_triple
+~~~
+
+Cette technique qui consiste à parcourir une liste en en revoyant une autre modifiée s'appelle *la compréhension de liste* (list comprehensions en anglais)
+
+On peut ajouter un test afin de filtrer certains éléments présents dans liste_initiale. Par exemple, on peut extraire les éléments pairs.
+
+~~~
+liste_initiale = [0,1,2,3,4]
+liste_nb_paire = [nb for nb in liste_intiale if nb%2==0] """nb parcourt liste_initiale éléments après éléments, si cet élément est pair, on le stocke dans liste_nbpaire"""
+print liste_nb_paire
+~~~
+
 ## Conclusion
 Vous avez appris à 
 
 * Créer une liste
 * Modifier les éléments d'une liste (ajout/suppression)
+* Créer une liste à partir d'une liste de départ en utilisant un filtre conditionnel : nouvelle_liste=[element for element in liste_départ if condition]
 * Utiliser les méthodes d'un objet dans la cas de l'objet liste
 
 En savoir plus sur [les méthodes des listes]: [Doc_listes] 
