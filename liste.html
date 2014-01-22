@@ -8,147 +8,128 @@
   <style>
 body{-webkit-font-smoothing:antialiased;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-size:16px;line-height:1.3125em;margin:0;padding:0}#wrapper{padding:20px}li{font-size:110%}li li{font-size:100%}li p{font-size:100%;margin:.5em 0}h1{color:#000;margin:0;font-size:1.5em;line-height:0.875em;margin-bottom:0.875em}h2{color:#111;margin:0;font-size:1.375em;line-height:0.9545454545454546em;margin-bottom:0.9545454545454546em}h3{color:#111;margin:0;font-size:1.25em;line-height:1.05em;margin-bottom:1.05em}h4{color:#111;margin:0;font-size:1.125em;line-height:1.1666666666666667em;margin-bottom:1.1666666666666667em}h5{color:#111;font-size:1.15em;line-height:1.3em;margin:1.3em 0}h6{font-size:1em;line-height:1.5em;margin:1.5em 0}body,p,td,div{color:#111;font-family:"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;word-wrap:break-word}a{color:#0d6ea1;text-decoration:none;-webkit-transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;-ms-transition:color 0.2s ease-in-out;transition:color 0.2s ease-in-out}a:hover{color:#3593d9}.footnote{color:#0d6ea1;font-size:.8em;vertical-align:super}#wrapper img{max-width:100%;height:auto}dd{margin-bottom:1em}li>p:first-child{margin:0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{border:1px solid rgba(0,0,0,0.25);border-collapse:collapse;display:table;empty-cells:hide;margin:-1px 0 1.3125em;padding:0;table-layout:fixed}caption{display:table-caption;font-weight:700}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}tr{display:table-row}table th,table td{font-size:1.1em;line-height:23px;padding:0 1em}table thead{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tbody{background:rgba(0,0,0,0.05)}table tfoot{background:rgba(0,0,0,0.15);border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{display:inline-block;position:relative;margin:1em 0 2em}figcaption{font-style:italic;text-align:center;background:white;color:#666;position:absolute;left:0;bottom:-24px;width:98%;padding:1%;-webkit-transition:all 0.2s ease-in-out;-moz-transition:all 0.2s ease-in-out;-o-transition:all 0.2s ease-in-out;-ms-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out}.poetry pre{display:block;font-family:Georgia,Garamond,serif !important;font-size:110% !important;font-style:italic;line-height:1.6em;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif !important;word-break:break-all;word-break:break-word;-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;white-space:pre-wrap}blockquote p{font-size:110%;font-style:italic;line-height:1.6em}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;position:relative;vertical-align:super}sub{vertical-align:sub;top:-1px}p,h5{font-size:1.1429em;line-height:1.3125em;margin:1.3125em 0}dt,th{font-weight:700}table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd){background:rgba(255,255,255,0.06)}table tr:nth-child(even),table td:nth-child(even){background:rgba(200,200,200,0.25)}@media print{body{overflow:auto}img,pre,blockquote,table,figure,p{page-break-inside:avoid}#wrapper{background:#fff;color:#303030;font-size:85%;padding:10px;position:relative;text-indent:0}}@media screen{.inverted{background:#252a2a}.inverted #wrapper{background:#252a2a;color:#eee}.inverted hr{border-color:#333f40 !important}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted th,.inverted .math,.inverted caption,.inverted dt,.inverted dd{color:#eee}.inverted pre code{color:#111}.inverted table{background:none}.inverted table tr:nth-child(odd),.inverted table td:nth-child(odd){background:none}.inverted a{color:#acd1d5}::selection{background:rgba(157,193,200,0.5)}h1::selection{background-color:rgba(45,156,208,0.3)}h2::selection{background-color:rgba(90,182,224,0.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,0.3)}code::selection{background-color:rgba(0,0,0,0.7);color:#eee}code span::selection{background-color:rgba(0,0,0,0.7) !important;color:#eee !important}a::selection{background-color:rgba(255,230,102,0.2)}.inverted a::selection{background-color:rgba(255,230,102,0.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,0.5)}}
 /*
-
-github.com style (c) Vasily Polovnyov <vast@whiteants.net>
-
+Monokai style - ported by Luigi Maselli - http://grigio.org
 */
 
-pre {
-  background-color:
-  #f8f8f8;
-  border: 1px solid
-  #ccc;
-  font-size: 14px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-  margin: 26px 0;
-}
-
 pre code {
-  display: block;
-  color: #000;
-  background: #f8f8f8;
-  font-family: Consolas, 'Liberation Mono', Courier, monospace;
-}
-
-pre .comment,
-pre .template_comment,
-pre .diff .header,
-pre .javadoc {
-  color: #998;
-  font-style: italic
-}
-
-pre .keyword,
-pre .css .rule .keyword,
-pre .winutils,
-pre .javascript .title,
-pre .nginx .title,
-pre .subst,
-pre .request,
-pre .status {
-  color: #333;
-  font-weight: bold
-}
-
-pre .number,
-pre .hexcolor,
-pre .ruby .constant {
-  color: #099;
-}
-
-pre .string,
-pre .tag .value,
-pre .phpdoc,
-pre .tex .formula {
-  color: #d14
-}
-
-pre .title,
-pre .id,
-pre .coffeescript .params,
-pre .scss .preprocessor {
-  color: #900;
-  font-weight: bold
-}
-
-pre .javascript .title,
-pre .lisp .title,
-pre .clojure .title,
-pre .subst {
-  font-weight: normal
-}
-
-pre .class .title,
-pre .haskell .type,
-pre .vhdl .literal,
-pre .tex .command {
-  color: #458;
-  font-weight: bold
+  display: block; padding: 0.5em;
+  background: #272822;
 }
 
 pre .tag,
 pre .tag .title,
-pre .rules .property,
-pre .django .tag .keyword {
-  color: #000080;
-  font-weight: normal
-}
-
-pre .attribute,
-pre .variable,
-pre .lisp .body {
-  color: #008080
-}
-
-pre .regexp {
-  color: #009926
-}
-
-pre .class {
-  color: #458;
-  font-weight: bold
-}
-
-pre .symbol,
-pre .ruby .symbol .string,
-pre .lisp .keyword,
-pre .tex .special,
-pre .prompt {
-  color: #990073
-}
-
-pre .built_in,
+pre .keyword,
+pre .literal,
+pre .strong,
+pre .change,
+pre .winutils,
+pre .flow,
 pre .lisp .title,
-pre .clojure .built_in {
-  color: #0086b3
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special {
+  color: #F92672;
 }
 
+pre code {
+  color: #DDD;
+}
+
+pre code .constant {
+	color: #66D9EF;
+}
+
+pre .code,
+pre .class .title,
+pre .header {
+	color: white;
+}
+
+pre .link_label,
+pre .attribute,
+pre .symbol,
+pre .symbol .string,
+pre .value,
+pre .regexp {
+	color: #BF79DB;
+}
+
+pre .link_url,
+pre .tag .value,
+pre .string,
+pre .bullet,
+pre .subst,
+pre .title,
+pre .emphasis,
+pre .haskell .type,
 pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt {
+  color: #A6E22E;
+}
+
+pre .comment,
+pre .java .annotation,
+pre .blockquote,
+pre .horizontal_rule,
+pre .python .decorator,
+pre .template_comment,
 pre .pi,
 pre .doctype,
+pre .deletion,
 pre .shebang,
-pre .cdata {
-  color: #999;
-  font-weight: bold
+pre .apache .sqbracket,
+pre .tex .formula {
+  color: #75715E;
 }
 
-pre .deletion {
-  background: #fdd
+pre .keyword,
+pre .literal,
+pre .css .id,
+pre .phpdoc,
+pre .title,
+pre .header,
+pre .haskell .type,
+pre .vbscript .built_in,
+pre .sql .aggregate,
+pre .rsl .built_in,
+pre .smalltalk .class,
+pre .diff .header,
+pre .chunk,
+pre .winutils,
+pre .bash .variable,
+pre .apache .tag,
+pre .tex .special,
+pre .request,
+pre .status {
+  font-weight: bold;
 }
 
-pre .addition {
-  background: #dfd
-}
-
-pre .diff .change {
-  background: #0086b3
-}
-
-pre .chunk {
-  color: #aaa
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
 }
 
 </style>
@@ -196,6 +177,21 @@ TypeError: can only concatenate list (not &quot;int&quot;) to list</code></pre>
 &gt;&gt;&gt; maliste
 [&apos;Galois&apos;, 3.14, 2, &apos;Newton&apos;, 42]</code></pre>
 
+<h2 id="avisderecherche">Avis de recherche</h2>
+
+<p>Comment savoir que la liste contient tel élément ? Demandez à Python&#8230;</p>
+<pre><code>&gt;&gt;&gt; bricabrac=[&quot;Martin&quot;,180,3.14,&quot;Julie&quot;,5,9,&quot;Martin&quot;]
+&gt;&gt;&gt; 5 in bricabrac
+True
+&gt;&gt;&gt; Martin in bricabrac
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name &apos;Martin&apos; is not defined
+&gt;&gt;&gt; &quot;Martin&quot; in bricabrac 
+True</code></pre>
+
+<p>Dans la liste bricabrac, on a demandé &#8220;est ce qu&#8217;il y a un élément dont la valeur est 5 ?&#8221; reponse True. L&#8217;expression 5 in braicabran est donc booléenne. </p>
+
 <h2 id="mthodesdeslistes">Méthodes des listes</h2>
 
 <p>Une liste est un objet. Contrairement à une variable qui se contente de stocker de l&#8217;information, un objet dispose de fonctionnalités appelées <strong>méthodes</strong>. Voyons quelques unes de ces méthodes. </p>
@@ -204,6 +200,11 @@ TypeError: can only concatenate list (not &quot;int&quot;) to list</code></pre>
 <li>Ajout d&#8217;éléments à une liste<br/>
 Essayez le programme suivant (dans sypder)</li>
 </ul>
+<pre><code>maliste = [1, 2, 3, 4, 5]
+maliste.append(6)
+print maliste</code></pre>
+
+<p>On dit que <em>append</em> est une méthode de l&#8217;objet maliste. Cette méthode a permis d&#8217;ajouter l&#8217;élément 6 dans la liste nommée maliste.</p>
 <pre><code>maliste = [1, 2, 3, 4, 5]
 maliste.extend([6, 7, 8]) 
 print maliste </code></pre>
@@ -218,6 +219,14 @@ maliste.remove(1)
 print maliste</code></pre>
 
 <p>La méthode <em>remove</em> retire de la liste un élément ici 1. </p>
+
+<ul>
+<li>Connaître la position d&#8217;un élément dans une liste<br/>
+On utilise la méthode index</li>
+</ul>
+<pre><code>&gt;&gt;&gt; liste=[1,2,&quot;a&quot;,&quot;coucou&quot;,1.5]
+&gt;&gt;&gt; liste.index(&quot;coucou&quot;)
+3</code></pre>
 
 <ul>
 <li>Tri<br/>

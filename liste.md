@@ -42,11 +42,31 @@ Erreur de **type** : cela signifie que nous avons voulu ajouter des torchons et 
 ['Galois', 3.14, 2, 'Newton', 42]
 ~~~~
 
+## Avis de recherche 
+Comment savoir que la liste contient tel élément ? Demandez à Python...
+~~~
+>>> bricabrac=["Martin",180,3.14,"Julie",5,9,"Martin"]
+>>> 5 in bricabrac
+True
+>>> Martin in bricabrac
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Martin' is not defined
+>>> "Martin" in bricabrac 
+True
+~~~
+Dans la liste bricabrac, on a demandé "est ce qu'il y a un élément dont la valeur est 5 ?" reponse True. L'expression 5 in braicabran est donc booléenne. 
 ## Méthodes des listes
 Une liste est un objet. Contrairement à une variable qui se contente de stocker de l'information, un objet dispose de fonctionnalités appelées **méthodes**. Voyons quelques unes de ces méthodes.
 
 * Ajout d'éléments à une liste
 Essayez le programme suivant (dans sypder)
+~~~
+maliste = [1, 2, 3, 4, 5]
+maliste.append(6)
+print maliste
+~~~
+On dit que *append* est une méthode de l'objet maliste. Cette méthode a permis d'ajouter l'élément 6 dans la liste nommée maliste.
 ~~~
 maliste = [1, 2, 3, 4, 5]
 maliste.extend([6, 7, 8]) 
@@ -61,6 +81,14 @@ maliste.remove(1)
 print maliste
 ~~~
 La méthode *remove* retire de la liste  un élément ici 1.
+
+* Connaître la position d'un élément dans une liste
+On utilise la méthode index
+~~~
+>>> liste=[1,2,"a","coucou",1.5]
+>>> liste.index("coucou")
+3
+~~~
 
 * Tri
 On peut ordonner les éléments d'une liste en faisant appel à la méthode *sort*

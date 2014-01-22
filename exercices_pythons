@@ -1,0 +1,45 @@
+# Exercices Python sur les listes et fonctions
+
+Traiter au choix 2 exercices parmi les suivants: 
+## Ex 1 : Gestion de notes
+1) Ecrire une fonction *calculMoy* qui admet comme paramètre une liste de notes sur 20. Cette fonction doit renvoyer la moyenne des notes.
+2) Ecrire une autre fonction *rechercheMini* qui renvoie la note la plus petite présente dans la liste de notes.
+3) Même travail pour une fonction *recherMax* qui renvoie la note la plus grande présente dans la liste de notes.
+4) Faire un programme contenant les 3 fonctions précédentes. Les notes sont rentrées par l'utilisateur. Python répond en donnant la moyenne obtenu et la note min et note max.
+5) Bonus: Modifier *calculMoy* afin de pouvoir prendre en compte des coefficients.
+
+##Ex 2 Exploration dans une liste
+Ecrire un programme qui fait saisir par l'utilisateur 20 valeurs dans un tableau de 20 cases (on utilisera une liste), puis qui demande ensuite une 21ème valeur.
+Le programme doit rechercher si ce nombre fait partie ou non des 20 valeurs précédemment saisies dans le tableau. Si c'est le cas le programme doit signaler et redemander un nombre...
+
+on utilisera l'expression booléenne "element in liste" cf cours sur les listes
+
+## Ex 3 Suppression de doublons
+1) A partir de la liste nombres = [1,1,30,17,23,30,15,23], écrivez un programme qui recopie cette liste dans une autre, en supprimant les doublons. La liste finale devra être triée par ordre croissant.
+
+2) Ecrire une fonction appelée listeHasard qui crenvoie une liste contenant des nombres entiers tirés au hasard. On utilisera la fonction randint(0,100) qui renvoe un entier tiré au hasard compris entre 0 et 100. Afin de pouvoir utiliser cette fonction on écrira au début du progamme 
+
+~~~
+>>> from random import randint
+>>> print randint(0,100)
+38
+>>> print randint(0,100)
+52
+~~~
+
+3) Appliquer le programme précédent à la liste créée par la fonction listeHasard
+
+## Ex 4
+1) Ecrire une fonction *retourne* qui reçoit une chaine de caractères et la renverse. Par exemple : retourne("Bonjour !") renvoie la chaine "! ruojnoB"
+2) En utilisant la fonction précédente. Ecrire une fonction *palindrome* qui reçoit une chaine et qui renvoie un booléen induiquant True si la chaine est un palindrome, False dans le cas contraire.
+Exemple : palindrome('radar') renvoie True
+3) Facultatif : En utilisant un fichier texte contenant les mots du dictionnaire, créer une liste contenant tous les palindromes. Trouver le plus long palindrome.
+Aide : Fichier txt contenant tous les mots français : [dico]
+
+
+[Retour au Sommaire][sommaire]
+
+
+[sommaire]: http://physiquelycee.fr/ISN/sommaire.html "Le sommaire"
+[dico]:http://www.pallier.org/ressources/dicofr/liste.de.mots.francais.frgut.txt
+

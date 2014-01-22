@@ -1,0 +1,35 @@
+/* on définit les caractéristique de body
+fond gris et largeur 500 pix pour le texte */
+
+body{
+	
+background-color:gray;
+width:500px;
+
+}
+/* Le titre 1 est rose */
+h1{
+	color:pink;
+}
+
+/* les paragraphes sont en Times, taille 18, ils sont inscrit dans un rectangle de 500 pix
+par 200 pix, overflow: auto permet de faire défiler le texte si il y a pas assez de place dans le cadre
+*/
+
+p{
+	font-size:18px;
+	font-family:"Times New Roman";
+	width:500px; height:200px; overflow:auto; border:solid 1px black;
+}
+
+/* les div sont écrits en taille 9 et centré */
+div{
+		font-size:9px;
+	font-family:"Arial";
+	text-align : center
+}
+/* Les liens hypertexte sont violet et avec une ombre*/
+a{
+	color:#bbbbff;
+	text-shadow: 5px 5px 5px #FF00FF
+}
